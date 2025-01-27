@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="PT - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/pedido.css">
+    <link rel="stylesheet" href="../css/geral.css">
+
+    <title>Cadastro | Salada & Sabor</title>
+</head>
+<body>
+    <header>
+        <div id="topo_geral">
+            <ul>
+                <li>saladaesabor@gmail.com</li>
+                <li>Belo Horizonte - MG</li>
+                <li><i class="fa-solid fa-language"></i> PT - BR</li>
+                <li id="social_media_topo_geral">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                </li>
+            </ul>
+        </div>
+       
+        <div id="header_nav">
+           <ul>
+                <li id="logo"><i class="fa-brands fa-envira">Salada&Sabor</i></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../pages/cardapio.html">Cardápio</a></li>
+                <li id="active_nav"><a href="#">Pedir</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+                <li><input type="search" placeholder="Buscar..."></li>
+                <li class="icons_nav">
+                    <a href="../pages/login.html"><i class="fa-solid fa-circle-user"></i></a><a href="pedido.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="traco_preto"></div>
+    </header>
+
+    <main>
+        <section id="box_pedido">
+            <div id="img_pedido"><img src="nadine-primeau-KD3XqquHlcc-unsplash.jpg" alt=""></div>
+            <div id="parte_box_pedido">
+                <h1>Pedido</h1>
+                
+                <h2>Que bom decidiu pedir na S&S. Você não irá se arrepender!</h2>
+                <hr>                
+                <form action="" id="form_pedido">    
+                    <div id="conta">                
+                        <div>Nome de cadastro:<input type="text"></div>
+                        <div>Senha:<input type="password"></div>
+                    </div>
+                    <hr>
+                    <h3>Itens do pedido</h3>
+                <div id="display_itens">
+                    <div id="itens_do_pedido">
+                        1. <input type="text" value="Salada 1" disabled><input type="number" class="qnt_item"><br>
+                        2. <input type="text" value="Salada 2" disabled><input type="number" class="qnt_item"><br>
+                        3. <input type="text" value="Salada 3" disabled><input type="number" class="qnt_item"><br>
+                        4. <input type="text" value="Salada 4" disabled><input type="number" class="qnt_item"><br>
+                        5. <input type="text" value="Molho 1" disabled><input type="number" class="qnt_item"><br>
+                    </div>
+                    <div id="itens_do_pedido">
+                        6. <input type="text" value="Salada 1" disabled><input type="number" class="qnt_item"><br>
+                        7. <input type="text" value="Salada 2" disabled><input type="number" class="qnt_item"><br>
+                        8. <input type="text" value="Salada 3" disabled><input type="number" class="qnt_item"><br>
+                        9. <input type="text" value="Salada 4" disabled><input type="number" class="qnt_item"><br>
+                        10. <input type="text" value="Molho 1" disabled><input type="number" class="qnt_item"><br>
+                    </div>
+                </div>
+                    <hr>
+                    <h3>Observações do pedido</h3>
+                    <textarea name="" id=""></textarea>
+                    <hr>
+                    <h3>Análise de Entrega</h3>
+                    <div id="frete">
+                        <div>Endereço:<input type="text"></div>
+                        <div id="valor_frete">Valor: <input type="text" value="FRETE GRÁTIS" disabled></div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h3>Tipo de pagamento</h3>
+                        <div id="flex_pagamento">
+                        <a> Crédito <i class="fa-regular fa-credit-card"></i></a>
+                        <a> Débito <i class="fa-solid fa-credit-card"></i></a>
+                        <a> Pix <i class="fa-brands fa-pix"></i></a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="btn"><input id="btn_fazer_pedido" type="button" value="Enviar pedido" href="#"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="grid_rodape">
+            <div class="titulos_rodape">Navegação</div>
+            <div class="titulos_rodape">Outros Links</div>
+            <div class="titulos_rodape">Horários de funcionamento</div>
+            <div id="logo2"><i class="fa-brands fa-envira">Salada&Sabor</i></div>
+            <div class="Rodape_navegacao">
+                <a href="">Início</a>
+                <a href="">Cardápio</a>
+                <a href="">Pedir</a>
+                <a href="">Contato</a>
+            </div>
+            <div class="Rodape_navegacao">
+                <a href="">SAC</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+            </div>
+            <div class="rodape_horarios">
+                <p>Seg - sex: 09:00am - 12:00pm</p>
+                <p>Seg - sex: 09:00am - 01:00am</p>
+                <div class="titulos_rodape2">Horários de atendimento SAC</div>
+                <p>Seg - Dom: 00:00am - 23:59pm</p>
+            </div>
+            <div>
+                <div class="titulos_rodape2">Envie-nos uma mensagem</div>
+                <div id="rodape_mensagem">
+                    <input type="text" placeholder="Digite aqui...">
+                    <input id="btn_mnsg" type="button" value="Enviar">
+                </div>
+                <div id="social_media_rodape">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="fim">© 2024 Salada&Sabor | Desenvolvido por ldz_dev</div>
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+input:focus{
+    outline: none;
+}
+
+body{
+    background-color: #fff;
+    overflow-x: hidden;
+    background-repeat: repeat;
+}
+
+html ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: #2E4F37;
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 28px 8%;
+}
+
+ul{
+    list-style: none;
+}
+
+#topo_geral{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cac9c9;
+}
+
+#topo_geral ul{
+    gap: 15rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#social_media_topo_geral a{
+    margin-right: 1rem;
+}
+
+#navegation{
+    position: sticky;
+}
+
+#header_nav{
+    background-color: #8EA695;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#header_nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+    padding-inline: 70px;
+}
+
+#header_nav a{
+    color: #fff;
+    font-weight: 800;
+    padding-inline: 5px;
+}
+
+#active_nav a{
+    background-color: #49794d;
+    padding-inline: 6px;
+    padding-block: 3px;
+    border-radius: 5px;
+}
+
+#header_nav input{
+    border: none;
+    border-radius: 20px;
+    height: 25px;
+    padding-left: 10%;
+}
+
+.icons_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_nav i{
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.icons_nav i:hover{
+    opacity: 0.8;
+}
+
+#header_nav ul{
+    gap: 6rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#logo{
+    color: #1c1c1c;
+}
+
+#traco_preto{
+    width: 100%;
+    height: 1px;
+    background-color: #2E4F37;
+}
+
+footer{
+    background-color: #8EA695;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+}
+
+#grid_rodape{
+    padding-inline: 5vw;
+    padding-block: 4vh;
+    display: grid;
+    column-gap: 5vw;
+    grid-template-rows: 220px ;
+    grid-template-columns: 10vw 10vw 20vw 25vw;
+}
+
+.Rodape_navegacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.Rodape_navegacao a{
+    color: #2E4F37;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.titulos_rodape{
+    color: #2E4F37;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.rodape_horarios p{
+    color: #2E4F37;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.titulos_rodape2{
+    color: #2E4F37;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 40px;
+}
+
+#logo2{
+    color: #1c1c1c;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+#rodape_mensagem{
+    margin-top: 7px;
+}
+
+#rodape_mensagem input{
+    padding: 8px;
+    border: none;
+}
+
+#btn_mnsg{
+    background-color: #506b58;
+    border: none;
+    padding: 8px;
+    margin-left: -5px;
+    width: 80px;
+    cursor: pointer;
+}
+
+#social_media_rodape{
+    margin-top: 40px;
+}
+
+#social_media_rodape a{
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+#fim{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    background-color: #cac9c9;
+}
+
+#btnAbrir{
+    padding: 5px;
+    width: 37px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+#btnAbrir:hover{
+    opacity: 0.8;
+}
+
+#modal{
+    position: absolute;
+    background-color: white;
+    width: 750px;
+    height: 550px;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,0);
+    padding: 1em;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 15px;
+    display: none;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    border: none;
+    padding: 0;
+    background-color: #bcd4bb;
+}
+
+#imgModal {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#imgModal img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(40%);
+}
+
+#modal.modal-open {
+    display: flex;
+}
+
+dialog h2{
+    font-size: 2rem; 
+    padding-bottom: 10px;
+    border-bottom: 3px solid #2E4F37;
+}
+
+#modal-body {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 25px;
+    gap: 40px;
+}
+
+#grid-form{
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns: 80px max-content;
+    grid-template-rows: 50px 50px 50px 50px 50px 100px;
+
+}
+
+#grid-form div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #1c1c1c;
+}
+
+.inputModal{
+    width: 300px;
+    height: 80%;
+    text-align: start;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    border: none;
+    border-radius: 0;
+    border-bottom: #2E4F37 1px solid;
+    background-color: transparent;
+}
+
+.inputModal::placeholder{
+    font-size: 0.9rem;
+    color: #4e4e52;
+}
+
+#divBtnEnv{
+    grid-column: span 2;
+    width: 100%;
+    height: 100%;
+}
+
+#btnEnviar{
+    background-color: #49794d;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20%;
+    margin-inline: auto;
+    color: #fff;
+    border: none;
+    padding-inline: 50px;
+    padding-block: 8px;
+}
+
+#btnEnviar:hover{
+    opacity: 0.8;
+}
+
+.travarRolagem{
+    overflow: hidden;
+}
+
+.fundoPreto{
+    filter: blur(0.5rem);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#btnFechar{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2E4F37;
+    cursor: pointer;
+}
+
+#btnFechar:hover{
+    color: #49794d;
+}
+
+/*Resposividade*/
+
+.menu-open{
+    display: flex;
+}
+
+.menu-close{
+    display: none;
+}
+
+#header_mobile{
+    width: 60vw;
+    height: 100vh;
+    background-color: #8EA695;
+    z-index: 1;
+    position: absolute;
+    padding-block: 10vh;
+    top: 0;
+}
+
+#ul_mobile_menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.7rem;
+}
+
+#ul_mobile_menu ul{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#logo_mobile{
+    font-size: 1.2rem;
+}
+
+#icons_nav_mobile a{
+    margin-left: 20px;
+    color: #1c1c1c;
+}
+
+.active_nav_mobile{
+    width: 100%;
+    padding-inline: 15px;
+}
+
+#btnAbrir_mobile{
+    padding: 2rem;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1c1c1c;
+}
+
+#btnMenu{
+    display: none;
+    padding: 0px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1c1c1c;
+}
+
+#header-base_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1360px){
+
+    #rodape_mobile {
+        display: block;
+    }
+
+    #topo_geral{
+        display: none;
+    }
+
+    #header_nav{
+        display: none;
+    }
+    
+    #header-base_mobile{
+        background-color: #8EA695;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        width: 100vw;
+    }
+
+    #btnMenu{
+        display: block;
+    }
+
+    footer{
+        background-color: #8EA695;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: max-content ;
+        padding: 20px;
+    }
+    
+    #grid_rodape{
+        display: grid;
+        gap: 2vh;
+        grid-template-rows: 25vh 25vh 32vh;
+        grid-template-columns: 100%;
+    }
+    
+    .Rodape_navegacao a{
+        margin-top: 5px;
+    }
+
+    .Rodape_navegacao div{
+        margin-top: 10px;
+    }
+
+    .titulos_rodape2{
+        margin-top: 10px;
+    }
+
+
+    #modal{
+        
+        width: 100vw;
+        height: 100vh;
+        left: 50;
+        top: 0;
+        padding: 1em;
+        text-align: center;
+        transition: 0.5s;
+        border-radius: 15px;
+        display: none;
+        justify-content: center;
+        overflow: hidden;
+        z-index: 2;
+        padding: 0;
+    }
+    
+    #imgModal {
+        display: none;
+    }
+            
+    dialog h2{
+        font-size: 2rem; 
+        padding-bottom: 10px;
+        border-bottom: 3px solid #2E4F37;
+        padding-top: 70px;
+    }
+    
+    #modal-body {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-block: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 25px;
+        gap: 40px;
+    }
+    
+    #grid-form{
+        display: grid;
+        border-radius: 20px;
+        grid-template-columns: 20vw 70vw;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    }
+    
+    #grid-form div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1rem;
+        color: #1c1c1c;
+    }
+    
+    .inputModal{
+        width: 300px;
+        height: 80%;
+        text-align: start;
+        padding-left: 10px;
+        cursor: pointer;
+        margin-left: 15px;
+        border: none;
+        border-radius: 0;
+        border-bottom: #2E4F37 1px solid;
+        background-color: transparent;
+    }
+    
+    .inputModal::placeholder{
+        font-size: 0.9rem;
+        color: #4e4e52;
+    }
+        
+    #btnEnviar{
+        background-color: #49794d;
+        border: none;
+        border-radius: 10px;
+        margin-inline: auto;
+        color: #fff;
+        border: none;
+        padding-inline: 50px;
+    }
+    
+    #btnEnviar:hover{
+        opacity: 0.8;
+    }
+}
+

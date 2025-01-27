@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="PT - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="../images/logoSeS.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <link rel="stylesheet" href="../css/geral.css">
+
+    <title>Cardápio | Salada & Sabor</title>
+</head>
+<body>
+    <div id="tela">
+        <header>
+            <div id="topo_geral">
+                <ul>
+                    <li>saladaesabor@gmail.com</li>
+                    <li>Belo Horizonte - MG</li>
+                    <li><i class="fa-solid fa-language"></i> PT - BR</li>
+                    <li id="social_media_topo_geral">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                </ul>
+            </div>
+           
+            <div id="header_nav">
+               <ul>
+                    <li id="logo"><i class="fa-brands fa-envira">Salada&Sabor</i></li>
+                    <ul id="ul-mobile-nav">
+                        <li><a href="../index.html">Início</a></li>
+                        <li id="active_nav"><a href="../pages/cardapio.html">Cardápio</a></li>
+                        <li><a href="../pages/contato.html">Contato</a></li>
+                    </ul>
+                    <li class="icons_nav">
+                        <button id="btnAbrir" onclick="abrirFechar()"><i class="fa-solid fa-circle-user"></i></button>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="traco_preto"></div>
+
+        <section id="header-base_mobile">
+            <div id="logo"><i class="fa-brands fa-envira">Salada&Sabor</i></div>
+            <button id="btnMenu" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></button>
+        </section>
+    </header>
+
+    <section id="banner">
+        <img src="../images/bannerCardapio.jpg" alt="">
+        <h1></h1>
+    </section>
+
+    <main>
+        <h1 id="pageTitle">Conheça nosso cardápio</h1>
+        <section id="categorias">
+            <h1>Categorias</h1>
+            <h6></h6>
+            
+            <ul>
+                <li class="li_verde_fundo">
+                    <a href="#categoria1">
+                        <div><img src="../images/categoria1.png" alt=""></div>
+                        <h3>Saladas Verdes</h3>
+                    </a>
+                </li>
+                <li class="li_verde_fundo">
+                    <a href="#categoria2">
+                        <div><img src="../images/categoria2.png" alt=""></div>
+                        <h3>Saladas de Frutas</h3>
+                    </a>
+                </li>
+                <li class="li_verde_fundo">
+                    <a href="#categoria3">
+                        <div><img src="../images/categoria3.png" alt=""></div>
+                        <h3>Saladas c/ Proteínas</h3>
+                    </a>
+                </li>
+                <li class="li_verde_fundo">
+                    <a href="#categoria4">
+                        <div><img src="../images/categoria4.png" alt=""></div>
+                        <h3>Molhos</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="produtos">
+            
+            <div id="grid_home_pedidos">
+                <h1 id="categoria1"><span>SALADAS DE FRU</span>TAS</h1>
+                <div>
+                    <div><img src="../images/saladaFrutas1.jpg" alt=""></div>
+                    <h2>Red Sabor</h2>
+                    <p><span>Ingredientes:</span> Um mix de frutos congelados, como: morango, mirtilo, amora, franboesa e cereja. </p>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>                    
+                </div>
+                <div>
+                    <div><img src="../images/saladaFrutas2.jpg" alt=""></div>
+                    <h2>Arco-íris de Sabor</h2>
+                    <p><span>Ingredientes:</span> Morango, banana, kiwi, linhaça,  franboesas e um delicioso creme de iogurte de coco.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/saladaFrutas3.jpg" alt=""></div>
+                    <h2>Tons de Delícias</h2>
+                    <p><span>Ingredientes:</span> Castanhs, morango, framboesa, banana, coco ralado e creme cacau e mel.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/saladaFrutas4.jpg" alt=""></div>
+                    <h2>Mix do Jardin</h2>
+                    <p><span>Ingredientes:</span> Pera, maçã, banana, laranja, kiwi, manga, morango, melão e frutas vermelhas.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+            </div>
+            
+            <div id="grid_home_pedidos">
+                <h1 id="categoria2"><span>SALADAS VER</span>DES</h1>
+                <div>
+                    <div><img src="../images/categoria1.png" alt=""></div>
+                    <h2>Mix de Atum</h2>
+                    <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e macarrão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>                    
+                </div>
+                <div>
+                    <div><img src="../images/categoria1.png" alt=""></div>
+                    <h2>Mix de Atum</h2>
+                    <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e macarrão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/categoria1.png" alt=""></div>
+                    <h2>Mix de Atum</h2>
+                    <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e macarrão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/categoria1.png" alt=""></div>
+                    <h2>Mix de Atum</h2>
+                    <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e macarrão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+            </div>
+
+            <div id="grid_home_pedidos">        
+            <h1 id="categoria3"><span>SALADAS COM PROT</span>EÍNAS</h1>
+                <div>
+                    <div><img src="../images/saladaProteina1.jpg" alt=""></div>
+                    <h2>Folhas e ovo</h2>
+                    <p><span>Ingredientes:</span> Toamte, ovo, cebola, alface, rúcula e couve.</p><br>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>                    
+                </div>
+                <div>
+                    <div><img src="../images/saladaProteina3.jpg" alt=""></div>
+                    <h2>Toscana verde</h2>
+                    <p><span>Ingredientes:</span> Toamte, cebola, alface, rúcula, linguiça toscana e couve.</p><br>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/saladaProteina2.jpg" alt=""></div>
+                    <h2>X-tudo verde</h2>
+                    <p><span>Ingredientes:</span> Salmão, ovo, alface, tomate cereja, repolho roxo, milho, ervilha e pepino.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/mixAtum.jpg" alt=""></div>
+                    <h2>Mix de Atum</h2>
+                    <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e macarrão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+            </div>
+
+            <div id="grid_home_pedidos">        
+            <h1 id="categoria4"><span>MOLH</span>OS</h1>
+                <div>
+                    <div><img src="../images/molho1.jpg" alt=""></div>
+                    <h2>Limostarda</h2>
+                    <p><span>Ingredientes:</span> Mostarda e limão.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>                    
+                </div>
+                <div>
+                    <div><img src="../images/molho2.jpg" alt=""></div>
+                    <h2>Doce Sabor</h2>
+                    <p><span>Ingredientes:</span> Abacaxi, manga e mel.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/molho3.jpg" alt=""></div>
+                    <h2>Pimenta Soft</h2>
+                    <p><span>Ingredientes:</span> Pimenta e temperos.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+                <div>
+                    <div><img src="../images/molho4.jpg" alt=""></div>
+                    <h2>Mostarda e mel</h2>
+                    <p><span>Ingredientes:</span> Mostarda e mel.</p>
+                    <hr>
+                    <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                </div>
+            </div>        
+        </section>
+    </main>
+
+    <footer>
+        <div id="grid_rodape">
+            <div class="Rodape_navegacao">
+                <div class="titulos_rodape">Navegação</div>
+                <a href="">Início</a>
+                <a href="">Cardápio</a>
+                <a href="">Pedir</a>
+                <a href="">Contato</a>
+            </div>
+            <div class="Rodape_navegacao">
+                <div class="titulos_rodape">Outros Links</div>
+                <a href="">SAC</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+            </div>
+            <div class="rodape_horarios">
+                <div class="titulos_rodape">Horários de funcionamento</div>
+                <p>Seg - sex: 09:00am - 12:00pm</p>
+                <p>Seg - sex: 09:00am - 01:00am</p>
+                <div class="titulos_rodape2">Horários de atendimento SAC</div>
+                <p>Seg - Dom: 00:00am - 23:59pm</p>
+            </div>
+            <div id="rodape_mobile">
+                <div id="logo2"><i class="fa-brands fa-envira">Salada&Sabor</i></div>
+                <div class="titulos_rodape2">Envie-nos uma mensagem</div>
+                <div id="rodape_mensagem">
+                    <input type="text" placeholder="Digite aqui...">
+                    <input id="btn_mnsg" type="button" value="Enviar">
+                </div>
+                <div id="social_media_rodape">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="fim">© 2024 Salada&Sabor | Desenvolvido por ldz_dev</div>
+    </div>
+    <dialog id="modal">
+        <div id="imgModal"><img src="../images/bannerModal.jpg" alt=""></div>
+        <div id="modal-body">
+            <button id="btnFechar" onclick="abrirFechar()">✖</button>
+
+            <div class="modal-header">
+                <h2>Preencha seu cadastro!</h2>
+            </div>
+            <form action="#" id="grid-form">
+                <div><label for="">Nome:</label></div>
+                <div><input class="inputModal" type="text" id="nome" oninput=nomeDigitado() placeholder="Digite seu nome"></div>
+        
+                <div><label for="">Email:</label></div>
+                <div><input class="inputModal" type="email" id="email" oninput=emailDigitado()  placeholder="Digite seu email"></div>
+        
+                <div><label for="">Telefone:</label></div>
+                <div><input class="inputModal" type="tel" id="telefone"  oninput=mascara_telefone() maxlength="14" placeholder="(xx) x xxxx-xxxx"></div>
+        
+                <div><label for="">CPF:</label></div>
+                <div><input class="inputModal" type="text" id="cpf" oninput=mascara_cpf() maxlength="14" placeholder="xxx.xxx.xxx-xx"></div>
+                
+                <div><label for="">Senha:</label></div>
+                <div><input class="inputModal" type="password" id="senha" oninput=mascara_senha() maxlength="8" placeholder="Digite uma senha de 8 caractéres"></div>
+                
+                <div id="divBtnEnv"><input type="submit" id="btnEnviar" value="ENVIAR" onclick="alertaConfirmacao()"></div>
+            </form>
+            
+        </div>
+        
+    </dialog>
+    <section id="header_mobile" class="menu-close">          
+        <button id="btnFechar" onclick="fecharMenu()">✖</button>
+        <ul id="ul_mobile_menu">
+            <li id="logo_mobile"><i class="fa-brands fa-envira">Salada&Sabor</i></li>
+            <ul>
+                <li><a href="../index.html">- Início</a></li>
+                <li id="active_nav"><a href="../pages/cardapio.html">- Cardápio</a></li>
+                <li><a href="../pages/contato.html">- Contato</a></li>
+            </ul>
+            <li id="icons_nav_mobile">
+                <button id="btnAbrir_mobile" onclick="abrirFechar()"><i class="fa-solid fa-circle-user"></i></button>
+                <a href="pedido.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul>
+    </section>
+</body>
+<script src="../js/script.js"></script>
+</html>

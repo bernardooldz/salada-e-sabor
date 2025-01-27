@@ -1,0 +1,259 @@
+#pageTitle{
+    text-align: center;
+    color: #2E4F37;
+    font-weight: 100;
+    font-size: 3rem;
+    font-style: italic;
+    height: max-content;
+}
+
+#banner{
+    width: 100%;
+    padding-inline: 0;
+    padding-top: 0;
+    height: 220px;
+}
+
+#banner img{
+    object-fit: cover;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    filter: brightness(40%);
+}
+
+#categorias{
+    margin-inline: auto;
+}
+
+#categorias h1{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2E4f37;
+}
+
+#categorias ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+    width: 55vw;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.li_verde_fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.li_verde_fundo div{
+    background-color: #4a6452;
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.li_verde_fundo h3{
+    color: #2E4f37;
+    font-size: 1rem;
+}
+
+#categorias img{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    object-fit: cover;
+}
+
+h6 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #2E4f37;
+    width: 120px;
+    height: 4px;
+    margin-inline: auto;
+}
+.li_categorias{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.li_categories h3{
+    color: #2E4f37;
+    font-size: 1rem;
+}
+
+#produtos{
+    background-image: url(/images/fundo.jpg);
+    flex-direction: column;
+    margin-top: 2%;
+    padding-bottom: 5rem;
+}
+
+#grid_home_pedidos{
+    display: grid;
+    margin-top: 3vh;
+    grid-template-columns: 15rem 15rem 15rem 15rem;
+    grid-template-rows: 5rem 21rem;
+    justify-content: space-evenly;
+    row-gap: 4vh;
+}
+
+#grid_home_pedidos div{
+    border: #3c5c45 1px solid;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    transition: .5s;
+    background-color: #8EA695;
+    position: relative;
+}
+
+#grid_home_pedidos>div>div{
+    border: none;
+    padding: 0;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+#grid_home_pedidos img{
+    border: #3c5c45 1px solid;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#grid_home_pedidos h2{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #2E4f37;
+    margin-bottom: 5%;
+}
+
+#grid_home_pedidos p span{
+    text-align: center;
+    font-size: 0.8rem;
+    color: #2E4F37;
+}
+
+#grid_home_pedidos p{
+    text-align: justify;
+    margin-inline: 5%;
+    font-size: 0.85rem;
+    color: #1c1c1c;
+    margin-bottom: 5%;
+}
+
+#grid_home_pedidos div h3{
+    text-align: center;
+    font-size: 1.1rem;
+    color: #2E4f37;
+    position: absolute;
+    bottom: 0px;
+    padding-block: 10px;
+    border-top: 1px solid #fff;
+}
+
+#grid_home_pedidos h3 a i:hover{
+    background-color: #4a6452;
+}
+
+#grid_home_pedidos h3 a i{
+    font-size: 1.3rem;
+    background-color: #2E4f37;
+    color: #fff;
+    border-radius: 100%;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+#produtos h1{
+    color: #2E4f37;
+    font-size: 1.7rem;
+    padding-top: 50px;
+    grid-column: span 4;
+}
+
+#produtos h1 span{
+    text-decoration: underline 3px;
+}
+
+
+@media screen and (max-width: 1360px){
+
+    #categorias {
+        margin-top: 0;
+        padding-inline: 10px;
+    }
+
+    #categorias h1 {
+        text-align: center;
+        font-size: 2rem;
+        color: #2E4f37;
+    }
+
+    #categorias ul {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+        gap: 10px;
+        justify-content: space-around;
+    }
+
+    .li_verde_fundo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+        gap: 20px;
+    }
+
+    .li_verde_fundo div {
+        background-color: #4a6452;
+        height: 70px;
+        width: 70px;
+        padding: 10px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .li_verde_fundo h3 {
+        color: #2E4f37;
+        font-size: 0.8rem;
+    }
+
+    #categorias img {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        object-fit: cover;
+    }
+
+    #grid_home_pedidos{
+        gap: 3vw;
+        overflow: scroll;
+    }
+}

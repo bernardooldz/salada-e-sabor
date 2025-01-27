@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="PT - br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/logoSeS.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/geral.css">
+
+    <title>Início | Salada & Sabor</title>
+</head>
+
+<body>
+    <div id="tela">
+        <header>
+            <div id="topo_geral">
+                <ul>
+                    <li>saladaesabor@gmail.com</li>
+                    <li>Belo Horizonte - MG</li>
+                    <li><i class="fa-solid fa-language"></i> PT - BR</li>
+                    <li id="social_media_topo_geral">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="header_nav">
+                <ul>
+                    <li id="logo"><i class="fa-brands fa-envira">Salada&Sabor</i></li>
+                    <ul id="ul-mobile-nav">
+                        <li><a href="../index.html">Início</a></li>
+                        <li id="active_nav"><a href="../pages/cardapio.html">Cardápio</a></li>
+                        <li><a href="../pages/contato.html">Contato</a></li>
+                    </ul>
+                    <li class="icons_nav">
+                        <button id="btnAbrir" onclick="abrirFechar()"><i class="fa-solid fa-circle-user"></i></button>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="traco_preto"></div>
+
+            <section id="header-base_mobile">
+                <div id="logo"><i class="fa-brands fa-envira">Salada&Sabor</i></div>
+                <button id="btnMenu" onclick="abrirMenu()"><i class="fa-solid fa-bars"></i></button>
+            </section>
+
+
+
+
+        </header>
+
+
+        <main id="content">
+            <div id="banner_header">
+                <img id="imgHome" src="images/bannerHome.jpg" alt="">
+                <img id="imgHomeMobile" src="images/bannerHomeMobile.jpg" alt="">
+                <section id="role_pbaixo">
+                    <i class="fa-solid fa-angles-down"></i>
+                </section>
+            </div>
+            <section id="quadrinhos_coisas_boas">
+                <div id="dentro_quadrinhos_coisas_boas">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h2>Frete grátis e super rápido.</h2>
+                </div>
+                <div id="dentro_quadrinhos_coisas_boas">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                    <h2>Saudável para a sua saúde.</h2>
+                </div>
+                <div id="dentro_quadrinhos_coisas_boas">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h2>Tudo fresco e 100% natural.</h2>
+                </div>
+                <div id="dentro_quadrinhos_coisas_boas">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Mais de 1.000 clientes.</h2>
+                </div>
+            </section>
+
+            <section id="categorias">
+                <h1>Categorias</h1>
+                <h6></h6>
+
+                <ul>
+                    <li class="li_verde_fundo">
+                        <div><img src="images/categoria1.png" alt=""></div>
+                        <h3>Saladas Verdes</h3>
+                    </li>
+                    <li class="li_verde_fundo">
+                        <div><img src="images/categoria2.png" alt=""></div>
+                        <h3>Saladas de Frutas</h3>
+                    </li>
+                    <li class="li_verde_fundo">
+                        <div><img src="images/categoria3.png" alt=""></div>
+                        <h3>Saladas c/ Proteínas</h3>
+                    </li>
+                    <li class="li_verde_fundo">
+                        <div><img src="images/categoria4.png" alt=""></div>
+                        <h3>Molhos</h3>
+                    </li>
+                </ul>
+            </section>
+            <section id="nossa_qualidade">
+                <h1>Nossa Qualidade</h1>
+                <h6></h6>
+
+                <div id="display_qualidade">
+                    <div id="div_verde1">
+                        <div class="img_qualidade"><img src="images/imgQualidade1.png" alt=""></div>
+                        <h4>Fresquinhas!</h4>
+                        <p>Todos os ingredientes sempre fersquinhos e colhidos especialmete para proporcionar o melhor
+                            sabor para você!</p>
+                    </div>
+                    <div id="div_verde2">
+                        <div class="img_qualidade"><img src="images/imgQualidade2.png" alt=""></div>
+                        <h4>Embalagens</h4>
+                        <p>Embalagens feitas pensadas no delivery, proporcionando condições especiais para manter tudo
+                            do jeitinho certo.</p>
+                    </div>
+                    <div id="div_verde3">
+                        <div class="img_qualidade"><img src="images/imgQualidade3.png" alt=""></div>
+                        <h4>Molhos</h4>
+                        <p>Peça junto com sua salada nossos molhos especiais que dão um gostinho ainda melhor para sua
+                            refeição.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="mais_pedidos">
+                <h1>Mais Pedidos <i class="fa-solid fa-fire-flame-curved"></i></h1>
+                <h6></h6>
+
+                <div id="grid_home_pedidos">
+                    <div>
+                        <div><img src="images/mixAtum.jpg" alt=""></div>
+                        <h2>Mix de Atum</h2>
+                        <p><span>Ingredientes:</span> Atum, rúcula, tomate cereja, pimetões, cebola roxa, milho e
+                            macarrão.</p>
+                        <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                    </div>
+                    <div>
+                        <div><img src="images/saladaProteina3.jpg" alt=""></div>
+                        <h2>Toscana verde</h2>
+                        <p><span>Ingredientes:</span> Toamte, cebola, alface, rúcula, linguiça toscana e couve.</p>
+                        <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                    </div>
+                    <div>
+                        <div><img src="images/saladaFrutas3.jpg" alt=""></div>
+                        <h2>Tons de Delícias</h2>
+                        <p><span>Ingredientes:</span> Castanha, morango, framboesa...</p>
+                        <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                    </div>
+                    <div>
+                        <div><img src="images/molho1.jpg" alt=""></div>
+                        <h2>Limostarda</h2>
+                        <p><span>Ingredientes:</span> Mostarda e limão.</p><br>
+                        <h3>Preço: R$21,00 <a href=""><i class="fa-solid fa-cart-plus"></i></a></h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="saiba_mais">
+                <h1>Saiba mais sobre a S&S</h1>
+                <h6></h6>
+                <div id="grid_saiba_mais">
+
+                    <div><img src="kamala-bright-7g2vvEw7IVg-unsplash.jpg" alt=""></div>
+                    <div class="bloco_escrito_saiba_mais">
+                        <h2>Produtos Frescos e de Hortas Locais</h2>
+                        <hr>
+                        <p>No Salada & Sabor, nossos produtos são cuidadosamente selecionados de hortas locais,
+                            garantindo frescor e qualidade excepcionais. Valorizamos a parceria com pequenos produtores,
+                            promovendo a agricultura local e oferecendo ingredientes de alta qualidade em cada prato.
+                        </p>
+                    </div>
+
+                    <div class="bloco_escrito_saiba_mais">
+                        <h2>Ingredientes Naturais e Saudáveis</h2>
+                        <hr>
+                        <p>Não utilizamos nenhum tipo de agrotóxico ou produtos químicos, assegurando que cada
+                            ingrediente seja natural e saudável. Nosso compromisso é proporcionar alimentos que
+                            respeitem o meio ambiente e contribuam para uma alimentação equilibrada e consciente.</p>
+                    </div>
+                    <div><img src="zoe-schaeffer-hmoDcZnB7uw-unsplash.jpg" alt=""></div>
+
+                    <div><img src="fernando-aguilar-SckKcAnMEiQ-unsplash.jpg" alt=""></div>
+                    <div class="bloco_escrito_saiba_mais">
+                        <h2>Preparação na Hora por Chefs Especializados</h2>
+                        <hr>
+                        <p>Nossas saladas são preparadas por chefs especializados no momento do pedido, evitando
+                            pré-preparações e garantindo que cheguem sempre frescas e crocantes até você. Este cuidado
+                            assegura que cada salada mantenha seu sabor e textura, proporcionando uma experiência
+                            culinária única.</p>
+                    </div>
+
+                    <div class="bloco_escrito_saiba_mais">
+                        <h2>Variedade de Saladas Deliciosas</h2>
+                        <hr>
+                        <p>Com uma variedade de saladas deliciosas, o Salada & Sabor oferece uma experiência
+                            gastronômica única e saudável. Nossos pratos são elaborados para agradar todos os paladares,
+                            combinando ingredientes frescos e nutritivos em receitas inovadoras e saborosas.</p>
+                    </div>
+                    <div><img src="dan-gold-4_jhDO54BYg-unsplash.jpg" alt=""></div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="grid_rodape">
+                <div class="Rodape_navegacao">
+                    <div class="titulos_rodape">Navegação</div>
+                    <a href="">Início</a>
+                    <a href="">Cardápio</a>
+                    <a href="">Pedir</a>
+                    <a href="">Contato</a>
+                </div>
+                <div class="Rodape_navegacao">
+                    <div class="titulos_rodape">Outros Links</div>
+                    <a href="">SAC</a>
+                    <a href="">Instagram</a>
+                    <a href="">Twitter</a>
+                    <a href="">Facebook</a>
+                </div>
+                <div class="rodape_horarios">
+                    <div class="titulos_rodape">Horários de funcionamento</div>
+                    <p>Seg - sex: 09:00am - 12:00pm</p>
+                    <p>Seg - sex: 09:00am - 01:00am</p>
+                    <div class="titulos_rodape2">Horários de atendimento SAC</div>
+                    <p>Seg - Dom: 00:00am - 23:59pm</p>
+                </div>
+                <div id="rodape_mobile">
+                    <div id="logo2"><i class="fa-brands fa-envira">Salada&Sabor</i></div>
+                    <div class="titulos_rodape2">Envie-nos uma mensagem</div>
+                    <div id="rodape_mensagem">
+                        <input type="text" placeholder="Digite aqui...">
+                        <input id="btn_mnsg" type="button" value="Enviar">
+                    </div>
+                    <div id="social_media_rodape">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="fim">© 2024 Salada&Sabor | Desenvolvido por ldz_dev</div>
+    </div>
+    <dialog id="modal">
+        <div id="imgModal"><img src="images/bannerModal.jpg" alt=""></div>
+        <div id="modal-body">
+            <button id="btnFechar" onclick="abrirFechar()">✖</button>
+
+            <div class="modal-header">
+                <h2>Preencha seu cadastro!</h2>
+            </div>
+            <form action="#" id="grid-form">
+                <div><label for="">Nome:</label></div>
+                <div><input class="inputModal" type="text" id="nome" oninput=nomeDigitado()
+                        placeholder="Digite seu nome"></div>
+
+                <div><label for="">Email:</label></div>
+                <div><input class="inputModal" type="email" id="email" oninput=emailDigitado()
+                        placeholder="Digite seu email"></div>
+
+                <div><label for="">Telefone:</label></div>
+                <div><input class="inputModal" type="tel" id="telefone" oninput=mascara_telefone() maxlength="14"
+                        placeholder="(xx) x xxxx-xxxx"></div>
+
+                <div><label for="">CPF:</label></div>
+                <div><input class="inputModal" type="text" id="cpf" oninput=mascara_cpf() maxlength="14"
+                        placeholder="xxx.xxx.xxx-xx"></div>
+
+                <div><label for="">Senha:</label></div>
+                <div><input class="inputModal" type="password" id="senha" oninput=mascara_senha() maxlength="8"
+                        placeholder="Digite uma senha de 8 caractéres"></div>
+
+                <div id="divBtnEnv"><input type="submit" id="btnEnviar" value="ENVIAR" onclick="alertaConfirmacao()">
+                </div>
+            </form>
+
+        </div>
+
+    </dialog>
+    <section id="header_mobile" class="menu-close">
+        <button id="btnFechar" onclick="fecharMenu()">✖</button>
+        <ul id="ul_mobile_menu">
+            <li id="logo_mobile"><i class="fa-brands fa-envira">Salada&Sabor</i></li>
+            <ul>
+                <li id="active_nav"><a href="../index.html">- Início</a></li>
+                <li><a href="../pages/cardapio.html">- Cardápio</a></li>
+                <li><a href="../pages/contato.html">- Contato</a></li>
+            </ul>
+            <li id="icons_nav_mobile">
+                <button id="btnAbrir_mobile" onclick="abrirFechar()"><i class="fa-solid fa-circle-user"></i></button>
+                <a href="pedido.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+        </ul>
+    </section>
+</body>
+<script src="js/script.js"></script>
+<script src="js/validacaoCadastro.js"></script>
+
+</html>
